@@ -43,18 +43,21 @@ or...
 
 `npx tsc`
 
-Running the Project
+### Running the Project
 After building the project, you can run the compiled JavaScript using Node.js:
 
 `node findTermInstances.js`
 
 (Though this won't do anything interesting unless you add a call to the main function to the file.) 
 
-Running the Tests
+### Running the Tests
 The project includes 29 unit tests for the findTermInstances function, using Jest. To run the tests, execute:
 
 `npm test`
 
+### Known Issues / Limitations
+It does not distinguish between the first person pronoun and the first Roman numeral. 
+It does not detect when a pronoun is part of a multi-term name. E.g. in "Mr Asimov retains all rights to the IP 'I Robot'", it will return the "I" in "I Robot" as an instance of the first person singular. 
 
 Authors
-Bernard Molyneux - Initial work
+Bernard Molyneux
