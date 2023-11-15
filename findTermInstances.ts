@@ -41,8 +41,9 @@ function getWords(text : string) : string[]{
  */
 
 function checkTerm(given : string, targets : string[]): boolean {
+    let givenType : string | void = pronounType(given); 
     if (targets.includes(evaluationCase(given))) return true;
-    else if (pronounType(given) && targets.some(element => pronounType(given) === pronounType(element))) return true;
+    else if (givenType && targets.some(element => givenType === pronounType(element))) return true;
     else return false;    
 } 
 
