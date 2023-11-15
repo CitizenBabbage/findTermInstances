@@ -11,11 +11,6 @@ findTermInstances("The Customer is not our client", "Customer, client")) => ["Cu
 
 Broadly speaking, the function works by filtering out all terms but the ones requested, returning an array of the found terms. 
 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
 ### Prerequisites
 
 - Node.js
