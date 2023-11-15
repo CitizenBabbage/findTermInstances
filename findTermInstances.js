@@ -15,15 +15,10 @@ function getWords(text) {
         return words;
 }
 function checkTerm(given, targets) {
-    // console.log(`checking given ${JSON.stringify(given)} against target list ${targets}`)
-    // console.log(`pronounType of ${given} is ${pronounType(given)}`)
-    // console.log(`pronounType of ${targets} are ${targets.map(item => pronounType(item))}`)
     if (targets.includes(evaluationCase(given))) {
-        // console.log(`${given} matches ${targets} exactly`)
         return true;
     }
     else if (pronounType(given) && targets.some(element => pronounType(given) === pronounType(element))) {
-        // console.log(`pronounType of given ${given} is ${pronounType(given)}, which matches the pronoun type of some element in ${targets}`)
         return true;
     }
     else
@@ -48,5 +43,3 @@ function evaluationCase(term) {
     else
         return term.toLowerCase();
 }
-// const result = findTermInstances("My rights cannot be abridged by myself, only the Client", "I, Client")
-// console.log(`result is ${JSON.stringify(result)}`)
