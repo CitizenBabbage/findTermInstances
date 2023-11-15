@@ -6,8 +6,8 @@ It includes a function `findTermInstances` which finds requested terms (and equi
 The findTermInstances function takes two parameters: a string of text and a comma-separated string containing terms to search for. It returns the found terms (and equivalent pronouns) as an array.
 
 E.g. 
-findTermInstances("You must ensure that your fees are not high", "you") => ["You", "your"])
-findTermInstances("The Customer is not our client", "Customer, client")) => ["Customer", "client"]
+`findTermInstances("You must ensure that your fees are not high", "you") => ["You", "your"])`
+`findTermInstances("The Customer is not our client", "Customer, client")) => ["Customer", "client"]`
 
 Broadly speaking, the function works by filtering out all terms but the ones requested, returning an array of the found terms. 
 
@@ -20,31 +20,31 @@ Broadly speaking, the function works by filtering out all terms but the ones req
 ### Installing
 At the command line: 
 
-git clone https://github.com/CitizenBabbage/findTermInstances
+`git clone https://github.com/CitizenBabbage/findTermInstances`
 
 Navigate to the project directory and install the dependencies:
 
-npm install
+`npm install`
 
 The project uses TypeScript, which needs to be compiled to JavaScript. To build the project, run:
 
-npm run build
+`npm run build`
 
 or...
 
-npx tsc
+`npx tsc`
 
 Running the Project
 After building the project, you can run the compiled JavaScript using Node.js:
 
-node findTermInstances.js
+`node findTermInstances.js`
 
 (Though this won't do anything interesting unless you add a call to the main function to the file.) 
 
 Running the Tests
 The project includes 29 unit tests for the findTermInstances function, using Jest. To run the tests, execute:
 
-npm test
+`npm test`
 
 
 Authors
