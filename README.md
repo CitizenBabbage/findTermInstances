@@ -7,7 +7,9 @@ The findTermInstances function takes two parameters: a string of text and a comm
 
 E.g. 
 
+
 `findTermInstances("You must ensure that your fees are not high", "you") => ["You", "your"])`
+
 
 `findTermInstances("The Customer is not our client", "Customer, client")) => ["Customer", "client"]`
 
