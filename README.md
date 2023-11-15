@@ -13,7 +13,12 @@ E.g.
 
 `findTermInstances("The Customer is not our client", "Customer, client")) => ["Customer", "client"]`
 
+
 Broadly speaking, the function works by filtering out all terms but the ones requested, returning an array of the found terms. 
+
+It is generally case insensitive. However it distinguishes between lower and upper case 'i'. 
+
+
 
 ### Prerequisites
 
