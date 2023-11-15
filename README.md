@@ -6,7 +6,9 @@ It includes a function `findTermInstances` which finds requested terms (and equi
 The findTermInstances function takes two parameters: a string of text and a comma-separated string containing terms to search for. It returns the found terms (and equivalent pronouns) as an array.
 
 E.g. 
+
 `findTermInstances("You must ensure that your fees are not high", "you") => ["You", "your"])`
+
 `findTermInstances("The Customer is not our client", "Customer, client")) => ["Customer", "client"]`
 
 Broadly speaking, the function works by filtering out all terms but the ones requested, returning an array of the found terms. 
