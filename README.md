@@ -56,8 +56,8 @@ The project includes 29 unit tests for the findTermInstances function, using Jes
 `npm test`
 
 ### Known Issues / Limitations
-It does not distinguish between the first person pronoun and the first Roman numeral. 
-It does not detect when a pronoun is part of a multi-term name. E.g. in "Mr Asimov retains all rights to the IP 'I Robot'", it will return the "I" in "I Robot" as an instance of the first person singular. 
+- It does not distinguish between the first person pronoun and the first Roman numeral. 
+- It does not detect when a pronoun is part of a multi-term name. E.g. in "Mr Asimov retains all rights to the IP 'I Robot'", it will return the "I" in "I Robot" as an instance of the first person singular. 
 
-Authors
+### Authors
 Bernard Molyneux
